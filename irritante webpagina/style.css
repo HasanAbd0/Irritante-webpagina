@@ -36,12 +36,12 @@ html, body{
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-image: url(/animaatjes-vliegen-93352.gif);
+    background-image: url(img/depositphotos_463898146-stock-photo-the-robber-fly-is-a.jpg);
   }
   
   .right {
     flex: 1;
-    background-image: url(/Color_Flash.gif);
+    background-image: url(img/Color_Flash.gif);
     height: 100%;
     display: flex;
 
@@ -222,7 +222,7 @@ img{
     align-items: center;
     margin-top: 200px;
     white-space: nowrap;
-     animation: move-back-forth 1.9s ease-in-out infinite; */
+     animation: move-back-forth 1.9s ease-in-out infinite; 
     
     
  margin-top:300px;
