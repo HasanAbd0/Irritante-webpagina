@@ -1,0 +1,435 @@
+*{
+margin: 0;
+padding: 0;
+
+
+
+}
+
+html, body{
+    height: 100%;
+  }
+  
+  body {
+    background: #3d0606;
+    font-family: -apple-system, sans-serif;
+    color: #87870f;
+    font-size: 50px;
+    line-height: 100px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(/animaatjes-vliegen-93352.gif);
+  }
+  
+  .right {
+    flex: 1;
+    background-image: url(/Color_Flash.gif);
+    height: 100%;
+    display: flex;
+
+  }
+  
+  .hero {
+    margin: 16px;
+    max-width: 490px;
+  }
+  
+  .hero h1 {
+    font-size: 28px;
+    line-height: 34px;
+    max-width: 360px;
+  }
+  
+  .hero-logo {
+    width: 40px;
+  }
+  
+  .hero-actions {
+    margin-top: 36px;
+  }
+  
+  .hero-actions a.hero-app img {
+    width: 140px;
+  }
+  
+  .hero-actions a.hero-app:first-child {
+    margin-right: 8px;
+  }
+  
+  .hero-powered, .hero-powered a {
+    color: #999
+  }
+  
+  .hero-powered {
+    margin-top: 64px;
+    font-size: 14px;
+  }
+  
+  .hero-powered a {
+    text-decoration: underline;
+  }
+  
+  
+  .hero-video {
+    margin: auto;
+    width: 367px;
+    height: 699px;
+    /* lees hier ook goed door */
+     background-image: url();
+    background-size: 367px 699px;
+    margin: 16px;
+  }
+  
+  .hero-video video {
+    position: relative;
+    left: 45px;
+    top: 105px;
+    width: 277px;
+  }
+  
+  @media screen and (max-width: 690px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .right {
+      width: 100%;
+    }
+  
+    .hero {
+      margin: 32px 16px;
+    }
+  
+    .hero-video {
+      margin: 32px auto;
+    }
+  }
+  
+img{
+transition:  1.9ms;
+}
+
+img:hover{
+
+transform: rotateX
+(360deg);
+}
+
+
+.audio{
+position:absolute;
+color: #000;
+left: 50%;
+background-color: #320594;
+top: 50%;
+border-radius: 20px;
+padding: 20px;
+transform: translate(50%,-50%);
+font-size: 40px;
+margin-top: 200px;
+white-space: nowrap;
+animation: move-back-forth 1.9s ease-in-out infinite;
+
+
+
+}
+
+@keyframes move-back-forth {
+  0%  {
+
+  transform: translateX(0);
+  }
+  25%{
+    transform: translateX(300px);
+  }
+  50%{
+  transform: translateX(0);
+  }
+75%{
+transform: translateX(-300px);
+
+}
+
+100%{
+transform: translateX(0);
+
+
+}
+  }
+
+.text{
+background-color: #6e0087;
+width: 300px;
+
+
+}
+
+img{
+ 
+  }
+  
+  @keyframes move-back-forth {
+    0%  {
+  
+    transform: translateX(0);
+    }
+    25%{
+      transform: translateX(300px);
+    }
+    50%{
+    transform: translateX(0);
+    }
+  75%{
+  transform: translateX(-300px);
+  
+  }
+  
+  100%{
+  transform: translateX(0);
+  
+  
+  }
+}
+
+  .iphone{
+    color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    transform: translate(50%,-50%);
+    font-size: 40px;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    white-space: nowrap;
+     animation: move-back-forth 1.9s ease-in-out infinite; */
+    
+    
+ margin-top:300px;
+
+
+
+  }
+
+
+  .iphone:hover{
+transform: rotateX(960deg);
+cursor: pointer;
+  }
+
+
+  video{
+background-repeat: repeat;
+
+  }
+
+  video:hover{
+    transform: rotateX(960deg);
+    cursor: pointer
+
+  }
+
+  @keyframes repeatVideo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#myVideo {
+    animation: repeatVideo 5s infinite;
+}
+
+
+.hero-log{
+
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  transform: translate(50%,-50%);
+  font-size: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  white-space: nowrap;
+    animation: move-back-forth 1.9s ease-in-out infinite;
+
+}
+
+
+.hero-log:hover{
+
+  transform: rotateX(960deg);
+cursor: pointer;
+}
+
+@keyframes move-back-forth {
+  0%  {
+
+  transform: translateX(0);
+  }
+  25%{
+    transform: translateX(300px);
+  }
+  50%{
+  transform: translateX(0);
+  }
+75%{
+transform: translateX(-300px);
+
+}
+
+100%{
+transform: translateX(0);
+
+
+}
+}
+
+
+.app{
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  transform: translate(50%,-50%);
+  font-size: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  white-space: nowrap;
+    animation: move-back-forth 1.9s ease-in-out infinite;
+
+}
+
+
+.app:hover{
+
+  transform: rotateX(960deg);
+cursor: pointer;
+}
+
+@keyframes move-back-forth {
+  0%  {
+
+  transform: translateX(0);
+  }
+  25%{
+    transform: translateX(300px);
+  }
+  50%{
+  transform: translateX(0);
+  }
+75%{
+transform: translateX(-300px);
+
+}
+
+100%{
+transform: translateX(0);
+
+
+}
+}
+
+
+
+
+
+
+.text{
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  transform: translate(50%,-50%);
+  font-size: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  white-space: nowrap;
+    animation: move-back-forth-1 1.9s ease-in-out infinite;
+
+}
+
+
+.text:hover{
+
+  transform: rotate(960deg);
+cursor: pointer;
+}
+
+@keyframes move-back-forth-1{
+  0%  {
+
+  transform: translateY(0);
+  }
+  25%{
+    transform: translateY(300px);
+  }
+  50%{
+  transform: translateY(0);
+  }
+75%{
+transform: translateY(-300px);
+
+}
+
+100%{
+transform: translateX(0);
+
+
+}
+}
+
+.muis{
+background-position: center;
+  background-repeat: repeat-y;
+
+}
+  */
+
+
+
+
+
+ */ */
+
+
+
+
+
+
+
+
+
+
